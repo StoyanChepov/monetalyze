@@ -1,0 +1,17 @@
+<header class="navbar">
+  <nav>
+    <a routerLink="/">Home</a>
+  </nav>
+
+  <div class="actions">
+    <select
+      id="language-select"
+      aria-label="Select language"
+      (change)="languageService.setLanguage($any($event.target).value)"
+    >
+      @for (lang of languages; track lang) {
+        <option [value]="lang" [selected]="lang === languageService.language()">{{ languageLabel(lang) }}</option>
+      }
+    </select>
+  </div>
+</header>

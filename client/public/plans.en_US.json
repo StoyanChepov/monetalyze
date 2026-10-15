@@ -1,0 +1,362 @@
+[
+    {
+        "id": 1,
+        "name": "Free Plan",
+        "price": 0,
+        "description": "This is the free plan that offers essential features for personal projects and anyone who wants to try the service."
+    },
+    {
+        "id": 2,
+        "name": "Premium Plan",
+        "price": 19.99,
+        "description": "This is the premium plan that offers advanced features for growing businesses."
+    },
+    {
+        "id": 3,
+        "name": "Basic Plan",
+        "price": 4.99,
+        "description": "This is the basic plan that covers the everyday needs of individual users at an affordable price."
+    },
+    {
+        "id": 4,
+        "name": "Starter Plan",
+        "price": 9.99,
+        "description": "This is the starter plan that offers everything small teams need to get up and running quickly."
+    },
+    {
+        "id": 5,
+        "name": "Standard Plan",
+        "price": 14.99,
+        "description": "This is the standard plan that offers a balanced set of features for regular use."
+    },
+    {
+        "id": 6,
+        "name": "Professional Plan",
+        "price": 29.99,
+        "description": "This is the professional plan that offers powerful tools for freelancers and established professionals."
+    },
+    {
+        "id": 7,
+        "name": "Business Plan",
+        "price": 39.99,
+        "description": "This is the business plan that offers advanced management and reporting tools for companies of all sizes."
+    },
+    {
+        "id": 8,
+        "name": "Enterprise Plan",
+        "price": 99.99,
+        "description": "This is the enterprise plan that offers unlimited scalability, dedicated support and custom security controls for large organizations."
+    },
+    {
+        "id": 9,
+        "name": "Team Plan",
+        "price": 24.99,
+        "description": "This is the team plan that offers shared workspaces and permission controls for collaborating groups."
+    },
+    {
+        "id": 10,
+        "name": "Startup Plan",
+        "price": 17.99,
+        "description": "This is the startup plan that offers flexible features and room to grow for young companies."
+    },
+    {
+        "id": 11,
+        "name": "Freelancer Plan",
+        "price": 12.99,
+        "description": "This is the freelancer plan that offers invoicing, client management and project tracking for independent workers."
+    },
+    {
+        "id": 12,
+        "name": "Student Plan",
+        "price": 2.99,
+        "description": "This is the student plan that offers a discounted set of core features for learners with a valid student status."
+    },
+    {
+        "id": 13,
+        "name": "Nonprofit Plan",
+        "price": 7.99,
+        "description": "This is the nonprofit plan that offers reduced pricing and essential tools for charities and community organizations."
+    },
+    {
+        "id": 14,
+        "name": "Education Plan",
+        "price": 5.99,
+        "description": "This is the education plan that offers classroom-friendly tools for teachers, schools and training centers."
+    },
+    {
+        "id": 15,
+        "name": "Family Plan",
+        "price": 11.99,
+        "description": "This is the family plan that offers shared access for up to six household members under one subscription."
+    },
+    {
+        "id": 16,
+        "name": "Solo Plan",
+        "price": 6.99,
+        "description": "This is the solo plan that offers a simple, focused experience for a single user."
+    },
+    {
+        "id": 17,
+        "name": "Plus Plan",
+        "price": 15.99,
+        "description": "This is the plus plan that extends the standard features with extra storage and faster performance."
+    },
+    {
+        "id": 18,
+        "name": "Pro Max Plan",
+        "price": 49.99,
+        "description": "This is the pro max plan that offers high usage limits and advanced tools for power users."
+    },
+    {
+        "id": 19,
+        "name": "Ultimate Plan",
+        "price": 79.99,
+        "description": "This is the ultimate plan that unlocks every feature with the highest limits and top-tier support."
+    },
+    {
+        "id": 20,
+        "name": "Developer Plan",
+        "price": 21.99,
+        "description": "This is the developer plan that offers sandbox environments, detailed logs and tooling for building and testing applications."
+    },
+    {
+        "id": 21,
+        "name": "Agency Plan",
+        "price": 59.99,
+        "description": "This is the agency plan that offers multi-client management and white-label options for service providers."
+    },
+    {
+        "id": 22,
+        "name": "E-commerce Plan",
+        "price": 34.99,
+        "description": "This is the e-commerce plan that offers product catalogs, secure checkout and order management for online stores."
+    },
+    {
+        "id": 23,
+        "name": "Marketing Plan",
+        "price": 27.99,
+        "description": "This is the marketing plan that offers campaign planning, email tools and audience insights."
+    },
+    {
+        "id": 24,
+        "name": "Analytics Plan",
+        "price": 32.99,
+        "description": "This is the analytics plan that offers in-depth dashboards and data exports to support better decisions."
+    },
+    {
+        "id": 25,
+        "name": "Security Plan",
+        "price": 44.99,
+        "description": "This is the security plan that offers threat monitoring, access controls and audit trails to protect your data."
+    },
+    {
+        "id": 26,
+        "name": "Backup Plan",
+        "price": 8.99,
+        "description": "This is the backup plan that offers automatic scheduled backups and easy restoration of your files."
+    },
+    {
+        "id": 27,
+        "name": "Cloud Storage Plan",
+        "price": 9.49,
+        "description": "This is the cloud storage plan that offers generous space to store, sync and share files from any device."
+    },
+    {
+        "id": 28,
+        "name": "Hosting Basic Plan",
+        "price": 3.99,
+        "description": "This is the basic hosting plan that offers reliable hosting for small websites and personal blogs."
+    },
+    {
+        "id": 29,
+        "name": "Hosting Plus Plan",
+        "price": 13.99,
+        "description": "This is the plus hosting plan that offers more resources and faster load times for growing websites."
+    },
+    {
+        "id": 30,
+        "name": "Hosting Pro Plan",
+        "price": 25.99,
+        "description": "This is the pro hosting plan that offers high-performance servers for busy and resource-heavy websites."
+    },
+    {
+        "id": 31,
+        "name": "Email Plan",
+        "price": 5.49,
+        "description": "This is the email plan that offers professional mailboxes with your own domain and spam protection."
+    },
+    {
+        "id": 32,
+        "name": "Domain Plan",
+        "price": 11.49,
+        "description": "This is the domain plan that offers domain registration, DNS management and automatic renewals."
+    },
+    {
+        "id": 33,
+        "name": "Support Essentials Plan",
+        "price": 16.99,
+        "description": "This is the support essentials plan that offers email support with a guaranteed response within one business day."
+    },
+    {
+        "id": 34,
+        "name": "Priority Support Plan",
+        "price": 36.99,
+        "description": "This is the priority support plan that offers fast responses and a direct line to experienced support engineers."
+    },
+    {
+        "id": 35,
+        "name": "24/7 Support Plan",
+        "price": 54.99,
+        "description": "This is the 24/7 support plan that offers round-the-clock assistance by phone, chat and email."
+    },
+    {
+        "id": 36,
+        "name": "API Access Plan",
+        "price": 22.99,
+        "description": "This is the API access plan that offers programmatic access with standard rate limits for your integrations."
+    },
+    {
+        "id": 37,
+        "name": "API Pro Plan",
+        "price": 64.99,
+        "description": "This is the API pro plan that offers high rate limits, webhooks and priority API support."
+    },
+    {
+        "id": 38,
+        "name": "Automation Plan",
+        "price": 28.99,
+        "description": "This is the automation plan that offers workflow builders and scheduled jobs to save time on repetitive tasks."
+    },
+    {
+        "id": 39,
+        "name": "Integration Plan",
+        "price": 31.99,
+        "description": "This is the integration plan that offers ready-made connectors to popular third-party tools and services."
+    },
+    {
+        "id": 40,
+        "name": "Collaboration Plan",
+        "price": 18.99,
+        "description": "This is the collaboration plan that offers shared documents, comments and real-time editing for teams."
+    },
+    {
+        "id": 41,
+        "name": "Project Management Plan",
+        "price": 23.99,
+        "description": "This is the project management plan that offers boards, timelines and task assignments to keep projects on track."
+    },
+    {
+        "id": 42,
+        "name": "CRM Plan",
+        "price": 37.99,
+        "description": "This is the CRM plan that offers contact management, sales pipelines and customer history in one place."
+    },
+    {
+        "id": 43,
+        "name": "Helpdesk Plan",
+        "price": 26.99,
+        "description": "This is the helpdesk plan that offers ticketing, canned replies and a knowledge base for customer support teams."
+    },
+    {
+        "id": 44,
+        "name": "Reporting Plan",
+        "price": 20.99,
+        "description": "This is the reporting plan that offers scheduled reports and customizable templates for stakeholders."
+    },
+    {
+        "id": 45,
+        "name": "Compliance Plan",
+        "price": 69.99,
+        "description": "This is the compliance plan that offers policy management, audit logs and tools to meet regulatory requirements."
+    },
+    {
+        "id": 46,
+        "name": "Custom Plan",
+        "price": 89.99,
+        "description": "This is the custom plan that offers a tailored combination of features built around your specific needs."
+    },
+    {
+        "id": 47,
+        "name": "Growth Plan",
+        "price": 42.99,
+        "description": "This is the growth plan that offers scaling tools and higher limits for expanding businesses."
+    },
+    {
+        "id": 48,
+        "name": "Scale Plan",
+        "price": 74.99,
+        "description": "This is the scale plan that offers high-volume capacity and advanced controls for fast-growing organizations."
+    },
+    {
+        "id": 49,
+        "name": "Global Plan",
+        "price": 84.99,
+        "description": "This is the global plan that offers multi-region availability, multiple currencies and localized support."
+    },
+    {
+        "id": 50,
+        "name": "Seasonal Plan",
+        "price": 10.99,
+        "description": "This is the seasonal plan that offers short-term access for businesses with peak and off-peak periods."
+    },
+    {
+        "id": 51,
+        "name": "Monthly Flex Plan",
+        "price": 13.49,
+        "description": "This is the monthly flex plan that offers month-to-month billing with no long-term commitment."
+    },
+    {
+        "id": 52,
+        "name": "Annual Saver Plan",
+        "price": 199.99,
+        "description": "This is the annual saver plan that offers a full year of premium features at a discounted yearly rate."
+    },
+    {
+        "id": 53,
+        "name": "Lifetime Plan",
+        "price": 499.99,
+        "description": "This is the lifetime plan that offers a one-time payment for permanent access to all current features."
+    },
+    {
+        "id": 54,
+        "name": "Trial Plan",
+        "price": 0,
+        "description": "This is the trial plan that offers temporary full access so you can evaluate the service before committing."
+    },
+    {
+        "id": 55,
+        "name": "Mobile Plan",
+        "price": 8.49,
+        "description": "This is the mobile plan that offers optimized mobile apps and offline access for people on the go."
+    },
+    {
+        "id": 56,
+        "name": "Desktop Plan",
+        "price": 12.49,
+        "description": "This is the desktop plan that offers full-featured desktop applications with local file integration."
+    },
+    {
+        "id": 57,
+        "name": "Media Plan",
+        "price": 19.49,
+        "description": "This is the media plan that offers large file handling and streaming tools for creators and publishers."
+    },
+    {
+        "id": 58,
+        "name": "Storage Plus Plan",
+        "price": 14.49,
+        "description": "This is the storage plus plan that offers expanded storage capacity as an upgrade to any other plan."
+    },
+    {
+        "id": 59,
+        "name": "Managed Services Plan",
+        "price": 119.99,
+        "description": "This is the managed services plan that offers hands-on setup, monitoring and maintenance by our expert team."
+    },
+    {
+        "id": 60,
+        "name": "Partner Plan",
+        "price": 94.99,
+        "description": "This is the partner plan that offers reseller pricing, co-marketing resources and a dedicated account manager."
+    }
+]

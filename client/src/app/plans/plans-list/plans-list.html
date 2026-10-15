@@ -1,0 +1,109 @@
+<h1>Service plans</h1>
+
+<div class="toolbar">
+  <input class="control" type="search" [formControl]="searchControl" placeholder="Filter by name or ID" />
+
+
+  <button type="button" class="control view-toggle" (click)="view.set(view() === 'list' ? 'grid' : 'list')"
+    [attr.aria-label]="'Switch to ' + (view() === 'list' ? 'grid' : 'list') + ' view'">
+    @if (view() === 'list') {
+    <span class="view-icon" aria-hidden="true">▦</span>
+    Grid view
+    } @else {
+    <span class="view-icon" aria-hidden="true">☰</span>
+    List view
+    }
+  </button>
+
+
+  <label for="page-size">Plans per page:</label>
+
+  <select id="page-size" class="control" [value]="pagination$.value.pageSize"
+    (change)="changePageSize(+$any($event.target).value)">
+    @for (size of pageSizeOptions; track size) {
+    <option [value]="size">{{ size }}</option>
+    }
+  </select>
+
+  @if (view() === 'grid') {
+  <label class="columns-picker">
+    Columns
+    <select #colSelect class="control" (change)="columns.set(+colSelect.value)">
+      <option value="0" [selected]="columns() === 0">Auto</option>
+      @for (n of [1, 2, 3, 4, 5, 6]; track n) {
+      <option [value]="n" [selected]="columns() === n">{{ n }}</option>
+      }
+    </select>
+  </label>
+  }
+
+</div>
+
+@if (vm$ | async; as vm) {
+@switch (vm.status) {
+@case ('loading') { <p>Loading service plans...</p> }
+@case ('error') { <p>Unable to load service plans.</p> }
+@case ('success') {
+@if (view() === 'list') {
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (plan of vm.plans; track plan.id) {
+    <tr>
+      <td>{{ plan.id }}</td>
+      <td>
+        <a [routerLink]="['/plans', plan.id]" queryParamsHandling="preserve"> {{ plan.name }} </a>
+      </td>
+      <td>
+        <div class="description" [innerHTML]="plan.description"></div>
+      </td>
+    </tr>
+    } @empty {
+    <tr>
+      <td colspan="3">No plans match your filter.</td>
+    </tr>
+    }
+  </tbody>
+</table>
+} @else {
+<div class="grid" [class.fixed]="columns() > 0" [style.--columns]="columns()">
+  @for (plan of vm.plans; track plan.id) {
+  <article class="card">
+    <small>{{ plan.id }}</small>
+    <h2><a [routerLink]="['/plans', plan.id]" queryParamsHandling="preserve">{{ plan.name }}</a></h2>
+    <div class="description" [innerHTML]="plan.description"></div>
+  </article>
+  } @empty {
+  <p>No plans match your filter.</p>
+  }
+</div>
+}
+
+<nav class="pagination" aria-label="Service plan pagination">
+  <button class="control" type="button" [disabled]="!vm.hasPrev" (click)="goToPage(vm.page - 1)">
+    Previous
+  </button>
+
+  <span>
+    Page <input #pageInput class="page-input" type="number" inputmode="numeric" min="1" [attr.max]="vm.totalPages"
+      [value]="vm.page" aria-label="Current page" (change)="goToPage(pageInput.valueAsNumber)" />
+    @if (vm.totalPages !== null) {
+    of {{ vm.totalPages }}
+    ({{ vm.total }} plans)
+    }
+  </span>
+
+  <button class="control" type="button" [disabled]="!vm.hasNext" (click)="goToPage(vm.page + 1)">
+    Next
+  </button>
+</nav>
+
+}
+}
+}

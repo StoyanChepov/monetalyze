@@ -1,0 +1,20 @@
+<a routerLink="/plans" queryParamsHandling="preserve">
+    ← Back to plans
+</a>
+
+@if (plan.isLoading()) {
+<p>Loading plan details...</p>
+} @else if (plan.error()) {
+<p>Unable to load this service plan.</p>
+<!--} @else if (plan.hasValue()) { -->
+} @else if (singlePlan(); as p) {
+<article>
+    <h1>{{ p.name }}</h1>
+    <p>Plan ID: {{ p.id }}</p>
+
+    <section>
+        <h2>Description</h2>
+        <div [innerHTML]="p.description"></div>
+    </section>
+</article>
+}

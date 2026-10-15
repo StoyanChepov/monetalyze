@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+select {
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}

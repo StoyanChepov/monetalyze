@@ -1,0 +1,8 @@
+export interface Plan {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  currency: string;
+  status: string;
+}

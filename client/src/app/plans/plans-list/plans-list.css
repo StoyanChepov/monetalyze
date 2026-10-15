@@ -1,0 +1,112 @@
+/* Shared layout */
+.toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.grid.fixed {
+    grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 0;
+    /* lets the card shrink below its content width */
+    overflow-wrap: anywhere;
+    /* breaks long words when needed */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 24px 0;
+}
+
+/* Shared style for inputs, selects and buttons */
+.control {
+    padding: 8px 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background: #fff;
+    color: #344054;
+    font: inherit;
+}
+
+button.control {
+    cursor: pointer;
+}
+
+.control:hover:not(:disabled) {
+    border-color: #98a2b3;
+}
+
+.control:focus-visible {
+    outline: 2px solid #84caff;
+    outline-offset: 2px;
+}
+
+.control:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.view-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.view-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.page-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.page-input {
+    width: 4rem;
+    padding: 0.25rem 0.4rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eaecf0;
+    vertical-align: top;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
