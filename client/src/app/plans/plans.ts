@@ -29,7 +29,7 @@ export class Plans {
         language: string
     ): Observable<PlansResponse> {
         return this.http
-            .get<Plan[]>(`/plans.${language}.json`)
+            .get<Plan[]>(`plans.${language}.json`)
             .pipe(
                 map(plans => {
                     const total = plans.length;

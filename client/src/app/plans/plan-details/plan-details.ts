@@ -15,7 +15,7 @@ export class PlanDetails {
   languageService = inject(LanguageService);
 
   plan = httpResource<Plan[]>(
-    () => `/plans.${this.languageService.language()}.json`
+    () => `plans.${this.languageService.language()}.json`
   );
 
   singlePlan = computed(() =>
