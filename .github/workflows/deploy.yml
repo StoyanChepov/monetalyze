@@ -26,7 +26,7 @@ jobs:
           cache: pnpm
           cache-dependency-path: client/pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
-      - run: pnpm build --base-href /monetalize/
+      - run: pnpm build --base-href /${{ github.event.repository.name }}/
       - run: cp dist/client/browser/index.html dist/client/browser/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
